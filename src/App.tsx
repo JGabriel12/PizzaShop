@@ -7,7 +7,7 @@ import { ThemeProvider } from "./components/theme/theme-provider";
 export function App() {
   return (
     <HelmetProvider>
-      <ThemeProvider storageKey="pizzashop-theme" defaultTheme="dark">
+      <ThemeProvider storageKey="pizza-shop-theme" defaultTheme="dark">
         <Helmet titleTemplate="%s | Pizza.shop" />
         <Toaster richColors closeButton />
         <RouterProvider router={router} />
