@@ -7,14 +7,6 @@ import { BarChart } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
 import { getPopularProducts } from "@/api/get-popular-products";
 
-const data = [
-  { product: "Pepperoni", amount: 40 },
-  { product: "Mussarela", amount: 30 },
-  { product: "Marguerita", amount: 50 },
-  { product: "4 queijos", amount: 16 },
-  { product: "Frango", amount: 26 },
-];
-
 const COLORS = [
   colors.sky[500],
   colors.amber[500],
@@ -47,8 +39,8 @@ export function PopularProductsChart() {
             <PieChart style={{ fontSize: 12 }}>
               <Pie
                 data={popularProducts}
-                dataKey="amount"
                 nameKey="product"
+                dataKey="amount"
                 cx="50%"
                 cy="50%"
                 outerRadius={86}
